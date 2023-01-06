@@ -2,8 +2,8 @@
 
 <html lang="en">
 	<!--begin::Head-->
-	<head><base href="">
-		<title>Tools Ngodeid - Tools untuk mempermudah kita dalam permasalahan yang terjadi di sekitar kita.</title>
+	<head>
+		<title><?php echo $title_atas; ?> - Tools untuk mempermudah kita dalam permasalahan yang terjadi di sekitar kita.</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="Tools untuk mempermudah kita dalam permasalahan yang terjadi di sekitar kita." />
 		<meta name="keywords" content="Tools Average Stock market, Md5 Password Generator, Image To base64." />
@@ -39,7 +39,7 @@
 					<!--begin::Container-->
 					<div class="d-flex flex-column flex-row-fluid align-items-center">
 						<!--begin::Menu-->
-						<div class="d-flex flex-column flex-column-fluid mb-5 mb-lg-10">
+						<div class="mb-5 mb-lg-10">
 							<!--begin::Brand-->
 							<div class="d-flex flex-center pt-10 pt-lg-0 mb-10 mb-lg-0 h-lg-225px">
 								<!--begin::Sidebar toggle-->
@@ -62,9 +62,13 @@
 							</div>
 							<!--end::Brand-->
 							<!--begin::Row-->
-							<?=$content?>
 							<!--end::Row-->
 						</div>
+						<!-- <div class="row"> -->
+							<div class="container mb-10" style="margin-top: -50px;">
+								<?=$content?>
+							</div>
+						<!-- </div> -->
 						<!--end::Menu-->
 						<!--begin::Footer-->
 						<div class="d-flex flex-column-auto flex-center">
@@ -83,12 +87,16 @@
 							<!--end::Navs-->
 						</div>
 						<!--end::Footer-->
+						
 					</div>
 					<!--begin::Content-->
 				</div>
+				
+				
+						
 				<!--begin::Content-->
 				<!--begin::Sidebar-->
-        <div class="d-none d-sm-block">
+        <div class="">
 				<div id="kt_sidebar" class="sidebar px-5 py-5 py-lg-8 px-lg-11 " data-kt-drawer="true" data-kt-drawer-name="sidebar" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="375px" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_sidebar_toggle">
 				
 					<div class="mb-5 mb-lg-8 " id="kt_sidebar_body">
@@ -98,6 +106,7 @@
 				</div>
         </div>
 				<!--end::Sidebar-->
+				
 			</div>
 			<!--end::Page-->
 		</div>
