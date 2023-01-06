@@ -19,11 +19,13 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Page Vendor Stylesheets(used by this page)-->
-		<link href="<?=base_url('/')?>theme/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+		
 		<!--end::Page Vendor Stylesheets-->
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
 		<link href="<?=base_url('/')?>theme/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="<?=base_url('/')?>theme/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+
+
 		<!--end::Global Stylesheets Bundle-->
 	</head>
 	<!--end::Head-->
@@ -112,27 +114,18 @@
 		</div>
 		<!--end::Root-->
 		<!--end::Main-->
-	
+		<script type="text/javascript">
+    var BASE_PATH = '<?php echo base_url(); ?>';
+    var SITE_PATH = '<?php echo site_url(); ?>/';
+		
+</script>
 		<!--begin::Javascript-->
 		<script>var hostUrl = "<?=base_url('/')?>theme/assets/";</script>
 		<!--begin::Global Javascript Bundle(used by all pages)-->
 		<script src="<?=base_url('/')?>theme/assets/plugins/global/plugins.bundle.js"></script>
 		<script src="<?=base_url('/')?>theme/assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
-		<!--begin::Page Vendors Javascript(used by this page)-->
-		<script src="<?=base_url('/')?>theme/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
-		<!--end::Page Vendors Javascript-->
-		<!--begin::Page Custom Javascript(used by this page)-->
-		<script src="<?=base_url('/')?>theme/assets/js/custom/utilities/modals/create-project/type.js"></script>
-		<script src="<?=base_url('/')?>theme/assets/js/custom/utilities/modals/create-project/budget.js"></script>
-		<script src="<?=base_url('/')?>theme/assets/js/custom/utilities/modals/create-project/settings.js"></script>
-		<script src="<?=base_url('/')?>theme/assets/js/custom/utilities/modals/create-project/team.js"></script>
-		<script src="<?=base_url('/')?>theme/assets/js/custom/utilities/modals/create-project/targets.js"></script>
-		<script src="<?=base_url('/')?>theme/assets/js/custom/utilities/modals/create-project/files.js"></script>
-		<script src="<?=base_url('/')?>theme/assets/js/custom/utilities/modals/create-project/complete.js"></script>
-		<script src="<?=base_url('/')?>theme/assets/js/custom/utilities/modals/create-project/main.js"></script>
-		<!-- <script src="<?=base_url('/')?>theme/assets/js/custom/utilities/modals/create-account.js"></script> -->
-		<!--end::Page Custom Javascript-->
+
 		<!--end::Javascript-->
 	</body>
 	<!--end::Body-->
