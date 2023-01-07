@@ -12,7 +12,7 @@
           <div class="mb-7 ">
             <!-- <form class="form-horizontal" name="form1" id="form1" method="post" action="<?php echo site_url(uri_string()) ?>"> -->
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label text-white">Use this generator to create an MD5 hash of a string:</label>
+                <label for="exampleFormControlTextarea1" class="form-label text-white">Gunakan generator ini untuk membuat hash MD5 dari sebuah string:</label>
                 <textarea placeholder="Use next line (Enter) to add more string" class="form-control" id="exampleFormControlTextarea1" name="val" rows="6"></textarea>
               </div>
 
@@ -32,8 +32,24 @@
             </div>
           </div>
           </div>
+          <h4 class="text-white">Apa itu hash MD5?</h4>
+          <p class="text-white">
+          Hash MD5 dibuat dengan mengambil string dengan panjang berapa pun dan menyandikannya menjadi sidik jari 128-bit. Pengkodean string yang sama menggunakan algoritma MD5 akan selalu menghasilkan output hash 128-bit yang sama. Hash MD5 biasanya digunakan dengan string yang lebih kecil saat menyimpan kata sandi, nomor kartu kredit, atau data sensitif lainnya di database seperti MySQL yang populer. Alat ini menyediakan cara cepat dan mudah untuk menyandikan hash MD5 dari string sederhana hingga 256 karakter.
+          <br>          
+          <br>          
+          Hash MD5 juga digunakan untuk memastikan integritas data file. Karena algoritma hash MD5 selalu menghasilkan output yang sama untuk input yang diberikan sama, pengguna dapat membandingkan hash dari file sumber dengan hash yang baru dibuat dari file tujuan untuk memeriksa apakah utuh dan tidak dimodifikasi.
+          <br>
+          <br>
+          Hash MD5 BUKAN enkripsi. Ini hanyalah sidik jari dari input yang diberikan. Namun, ini adalah transaksi satu arah dan karena itu hampir tidak mungkin merekayasa balik hash MD5 untuk mengambil string asli.
+
+          </p>
         </div>
+        
+        
+        <?=$feature_tools?>
       </div>
+
+      
     </div>
     
   <script type="text/javascript">
@@ -60,7 +76,7 @@
     console.log(textarea_change_location_massal);
     if (textarea_change_location_massal == '') {
       // alert('Insert Minimum 1 AWB');
-      alert('Gagal, Mohon masukan String..');
+      alert('error, Please insert String..');
       $("#btn-on-process").attr("disabled", false);
       $("#btn-on-process").html('Generate');
       return false;
@@ -85,7 +101,7 @@
     });
 
     if (list_awb_change_loc.length > 500) {
-      alert('Gagal, maksimal String 500 saja..');
+      alert('Gagal, Maximum 500 String..');
       return false;
     }
 

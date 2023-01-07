@@ -18,8 +18,10 @@
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
+
 		<!--begin::Page Vendor Stylesheets(used by this page)-->
-		
+		<link href='https://unpkg.com/dropzone@5/dist/min/dropzone.min.css' type='text/css' rel='stylesheet'>
+    <script src='https://unpkg.com/dropzone@5/dist/min/dropzone.min.js' type='text/javascript'></script>
 		<!--end::Page Vendor Stylesheets-->
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
 		<link href="<?=base_url('/')?>theme/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
