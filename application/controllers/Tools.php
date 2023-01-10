@@ -37,11 +37,11 @@ class Tools extends CI_Controller {
     
     $cek = $this->ceking_status_tools('md5');
     if($cek){
-      $this->data['title_atas']   = "Md5 Hash Generator";
-      $this->data['title_1']  = "Md5 Hash Generator";
-      $this->data['data_tools']   = $this->Tools_m->get_where_else_feature('md5');
-      $this->data['feature_tools']  = $this->load->view('home/feature',$this->data,TRUE);
-      $this->data['content']    = $this->load->view('tools/md5',$this->data,TRUE);
+      $this->data['title_atas']         = "Md5 Hash Generator";
+      $this->data['title_1']            = "Md5 Hash Generator";
+      $this->data['data_tools']         = $this->Tools_m->get_related('md5');
+      $this->data['feature_tools']      = $this->load->view('home/feature',$this->data,TRUE);
+      $this->data['content']            = $this->load->view('tools/md5',$this->data,TRUE);
       $this->load->view('layout/main',$this->data);
     }
 		
@@ -94,7 +94,7 @@ class Tools extends CI_Controller {
     if($cek){
   		$this->data['title_atas'] 	= "Image To base64";
   		$this->data['title_1'] 	= "Image To base64";
-      $this->data['data_tools'] 	= $this->Tools_m->get_where_else_feature('base64');
+      $this->data['data_tools'] 	= $this->Tools_m->get_related('base64');
       $this->data['feature_tools'] 	= $this->load->view('home/feature',$this->data,TRUE);
   		$this->data['content'] 		= $this->load->view('tools/base64',$this->data,TRUE);
   		$this->load->view('layout/main',$this->data);
@@ -141,7 +141,7 @@ class Tools extends CI_Controller {
     if($cek){
     	$this->data['title_atas'] 	= "Code Playground Ngodeapp";
     	$this->data['title_1'] 	= "Code Playground";
-      $this->data['data_tools'] 	= $this->Tools_m->get_where_else_feature('code');
+      $this->data['data_tools'] 	= $this->Tools_m->get_related('code');
       $this->data['feature_tools'] 	= $this->load->view('home/feature',$this->data,TRUE);
     	$this->data['content'] 		= $this->load->view('tools/code',$this->data,TRUE);
     	$this->load->view('layout/main',$this->data);

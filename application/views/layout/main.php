@@ -3,14 +3,14 @@
 <html lang="en">
 	<!--begin::Head-->
 	<head>
-		<title><?php echo $title_atas; ?> - Tools untuk mempermudah kita dalam permasalahan yang terjadi di sekitar kita.</title>
+		<title><?php echo $title_atas; ?> - Ngodeapp <?php echo $title_atas; ?></title>
 		<meta charset="utf-8" />
 		<meta name="description" content="Tools untuk mempermudah kita dalam permasalahan yang terjadi di sekitar kita." />
-		<meta name="keywords" content="Tools Average Stock market, Md5 Password Generator, Image To base64." />
+		<meta name="keywords" content="Tools untuk mempermudah kita dalam permasalahan yang terjadi di sekitar kita, Tools Average Stock market, Md5 Password Generator, Image To base64." />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Tools untuk mempermudah kita dalam permasalahan yang terjadi di sekitar kita. Tools Average Stock market, Md5 Password Generator, Image To base64." />
+		<meta property="og:locale" content="id" />
+		<meta property="og:type" content="tools" />
+		<meta property="og:title" content="<?php echo $title_atas; ?> - Tools untuk mempermudah kita dalam permasalahan yang terjadi di sekitar kita. Tools Average Stock market, Md5 Password Generator, Image To base64." />
 		<meta property="og:url" content="<?=base_url('tools')?>" />
 		<meta property="og:site_name" content="Tools Ngodeid - Tools untuk mempermudah kita dalam permasalahan yang terjadi di sekitar kita." />
 		<link rel="canonical" href="<?=base_url()?>" />
@@ -79,7 +79,7 @@
 							<!--begin::Navs-->
 							<ul class="menu fw-bold order-1">
 								<li class="menu-item">
-									<a href="https://ngodeid.com/" target="_blank" class="menu-link text-white opacity-50 opacity-100-hover px-3">Home</a>
+									<a href="<?=base_url('/')?>" class="menu-link text-white opacity-50 opacity-100-hover px-3">Home</a>
 								</li>
 								<li class="menu-item">
 									<a href="https://ngodeid.com/about/" target="_blank" class="menu-link text-white opacity-50 opacity-100-hover px-3">About</a>

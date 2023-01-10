@@ -11,6 +11,14 @@ class Tools_m extends CI_Model {
     $csql = "SELECT * from tb_tools where tools_slug != '".$slug."' AND rowstate=1 ORDER BY sort ASC  ";
     return $this->db->query($csql)->result();
   }
+  public function get_related($slug){
+    $csql = "SELECT * from tb_tools where tools_slug = '".$slug."' AND rowstate=1";
+    $data_tools = $this->db->query($csql)->row();
+    $csql_related = "SELECT * from tb_tools where kategori_id = $data_tools->kategori_id AND tools_slug != '".$data_tools->tools_slug."' AND rowstate=1  ORDER BY sort ASC";
+    
+    return $this->db->query($csql_related)->result();
+
+  }
   public function get_where_by_slug($slug){
     $csql = "SELECT * from tb_tools where tools_slug = '".$slug."' AND rowstate=1 ORDER BY sort ASC  ";
     return $this->db->query($csql)->row();
