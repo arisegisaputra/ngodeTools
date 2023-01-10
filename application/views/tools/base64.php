@@ -24,7 +24,7 @@
 
       // Select the text field
       copyText.select();
-      copyText.setSelectionRange(0, 999999); // For mobile devices
+      copyText.setSelectionRange(0, 99999); // For mobile devices
 
       // Copy the text inside the text field
       navigator.clipboard.writeText(copyText.value);
@@ -81,6 +81,16 @@
                 </div> 
               </div>
 
+              <div class="mb-7 mt-10 ">
+              <div class="row" id="view_data"  style="display: none">
+                <div class="col-md-12">
+                  <div class="table-responsive text-center">
+                  <div class="fw-semibold" id="show_base64"></div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
               <h4 class="text-white"><b>Format File</b></h4>
               <p class="text-white">
               Anda dapat mengunggah hanya 1 gambar (maks. 5 MB) sebagai JPG, PNG, GIF, WebP, SVG, atau BMP.
@@ -118,15 +128,7 @@
               
           </div>
           <!--begin::List-->
-          <div class="mb-7 mt-10 ">
-          <div class="row" id="view_data"  style="display: none">
-            <div class="col-md-12">
-              <div class="table-responsive text-center">
-              <div class="fw-semibold" id="show_base64"></div>
-              </div>
-            </div>
-          </div>
-          </div>
+          
         </div>
         
         

@@ -87,14 +87,33 @@ class Tools extends CI_Controller {
             echo $return;
 
   }
+  public function show_base64ToImage(){
+    $value = $this->input->post('val')[0];
+    $data_explode = explode(',', $value);
+    $jumlah_data_explode = count($data_explode);
+
+    $return = '';
+    if($jumlah_data_explode > 1){
+      $return .='
+            <img src="'.$value.'" class="img-thumbnail rounded">
+       ';
+    }else{
+      $return .='
+            <img src="data:image/png;base64,'.$data_explode[0].'" class="img-thumbnail rounded">
+       ';
+    }
+
+    echo $return;
+
+  }
 
   //base64tools
-  public function base64(){
-    $cek = $this->ceking_status_tools('base64');
+  public function imageBase64(){
+    $cek = $this->ceking_status_tools('imageBase64');
     if($cek){
   		$this->data['title_atas'] 	= "Image To base64";
   		$this->data['title_1'] 	= "Image To base64";
-      $this->data['data_tools'] 	= $this->Tools_m->get_related('base64');
+      $this->data['data_tools'] 	= $this->Tools_m->get_related('imageBase64');
       $this->data['feature_tools'] 	= $this->load->view('home/feature',$this->data,TRUE);
   		$this->data['content'] 		= $this->load->view('tools/base64',$this->data,TRUE);
   		$this->load->view('layout/main',$this->data);
@@ -148,4 +167,17 @@ class Tools extends CI_Controller {
     }
 		
 	}
+
+  public function base64Image(){
+    $cek = $this->ceking_status_tools('base64Image');
+    if($cek){
+      $this->data['title_atas']   = "Base64 To Image";
+      $this->data['title_1']  = "Base64 To Image";
+      $this->data['data_tools']   = $this->Tools_m->get_related('base64Image');
+      $this->data['feature_tools']  = $this->load->view('home/feature',$this->data,TRUE);
+      $this->data['content']    = $this->load->view('tools/base64Image',$this->data,TRUE);
+      $this->load->view('layout/main',$this->data);
+    }
+    
+  }
 }
