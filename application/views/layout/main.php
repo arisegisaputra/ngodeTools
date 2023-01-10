@@ -14,7 +14,7 @@
 		<meta property="og:url" content="<?=base_url('tools')?>" />
 		<meta property="og:site_name" content="Tools Ngodeid - Tools untuk mempermudah kita dalam permasalahan yang terjadi di sekitar kita." />
 		<link rel="canonical" href="<?=base_url()?>" />
-		<link rel="shortcut icon" href="<?=base_url('/')?>theme/assets/media/misc/icon.png" />
+		<link rel="shortcut icon" href="<?=base_url('/')?>favicon.ico" />
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
