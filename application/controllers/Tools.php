@@ -89,9 +89,10 @@ class Tools extends CI_Controller {
   }
   public function show_base64ToImage(){
     $value = $this->input->post('val')[0];
-    $data_explode = explode(',', $value);
+    $data_explode = explode('base64,', $value);
     $jumlah_data_explode = count($data_explode);
-
+    // print_r($data_explode);
+    // exit;
     $return = '';
     if($jumlah_data_explode > 1){
       $return .='
