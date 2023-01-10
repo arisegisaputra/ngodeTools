@@ -11,4 +11,8 @@ class Tools_m extends CI_Model {
     $csql = "SELECT * from tb_tools where tools_slug != '".$slug."' AND rowstate=1 ORDER BY sort ASC  ";
     return $this->db->query($csql)->result();
   }
+  public function get_where_by_slug($slug){
+    $csql = "SELECT * from tb_tools where tools_slug = '".$slug."' AND rowstate=1 ORDER BY sort ASC  ";
+    return $this->db->query($csql)->row();
+  }
 }
