@@ -23,4 +23,8 @@ class Tools_m extends CI_Model {
     $csql = "SELECT * from tb_tools where tools_slug = '".$slug."' AND rowstate=1 ORDER BY sort ASC  ";
     return $this->db->query($csql)->row();
   }
+  public function get_by_category($category_id,$id){
+    $csql = "SELECT * from tb_tools where kategori_id = '".$category_id."' AND rowstate=1 AND id !='".$id."' ORDER BY sort ASC  ";
+    return $this->db->query($csql)->result();
+  }
 }

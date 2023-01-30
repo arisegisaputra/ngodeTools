@@ -33,16 +33,9 @@
             </div>
           </div>
           </div>
-          <h4 class="text-white">Apa itu hash MD5?</h4>
+          <h4 class="text-white"><?=ucwords($data_tools->tools_name);?></h4>
           <p class="text-white">
-          Hash MD5 dibuat dengan mengambil string dengan panjang berapa pun dan menyandikannya menjadi sidik jari 128-bit. Pengkodean string yang sama menggunakan algoritma MD5 akan selalu menghasilkan output hash 128-bit yang sama. Hash MD5 biasanya digunakan dengan string yang lebih kecil saat menyimpan kata sandi, nomor kartu kredit, atau data sensitif lainnya di database seperti MySQL yang populer. Alat ini menyediakan cara cepat dan mudah untuk menyandikan hash MD5 dari string sederhana hingga 256 karakter.
-          <br>          
-          <br>          
-          Hash MD5 juga digunakan untuk memastikan integritas data file. Karena algoritma hash MD5 selalu menghasilkan output yang sama untuk input yang diberikan sama, pengguna dapat membandingkan hash dari file sumber dengan hash yang baru dibuat dari file tujuan untuk memeriksa apakah utuh dan tidak dimodifikasi.
-          <br>
-          <br>
-          Hash MD5 BUKAN enkripsi. Ini hanyalah sidik jari dari input yang diberikan. Namun, ini adalah transaksi satu arah dan karena itu hampir tidak mungkin merekayasa balik hash MD5 untuk mengambil string asli.
-
+          <?=ucwords($data_tools->tools_description);?>
           </p>
         </div>
         

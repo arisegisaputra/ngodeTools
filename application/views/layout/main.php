@@ -26,6 +26,16 @@
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
 		<link href="<?=base_url('/')?>theme/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="<?=base_url('/')?>theme/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT1R6QFJH"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-GWT1R6QFJH');
+		</script>
 
 
 		<!--end::Global Stylesheets Bundle-->
@@ -116,11 +126,14 @@
 		</div>
 		<!--end::Root-->
 		<!--end::Main-->
+
 		<script type="text/javascript">
     var BASE_PATH = '<?php echo base_url(); ?>';
     var SITE_PATH = '<?php echo site_url(); ?>/';
-		
-</script>
+		$(document).ready(function(){
+			$('#alertTooltip').tooltip();
+		});
+		</script>
 		<!--begin::Javascript-->
 		<script>var hostUrl = "<?=base_url('/')?>theme/assets/";</script>
 		<!--begin::Global Javascript Bundle(used by all pages)-->

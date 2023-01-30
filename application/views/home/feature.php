@@ -3,12 +3,12 @@
   <div class="row g-lg-7">
     <!--begin::Col-->
     
-    <?php if(!empty($data_tools)): ?>
+    <?php if(!empty($tools_related)): ?>
     <h3 class="text-white"> Tools Terkait : </h3>
-    <?php foreach($data_tools as $value_data_tools):?>
+    <?php foreach($tools_related as $value_data_tools):?>
       <div class="col-sm-6">
         <!--begin::Card-->
-        <a href="<?=base_url('/tools/'.$value_data_tools->tools_slug);?>"  class="card border-0 shadow-none min-h-200px mb-7" style="background-color: <?=$value_data_tools->color?>">
+        <a href="<?=base_url('/'.$value_data_tools->tools_slug);?>"  class="card border-0 shadow-none min-h-200px mb-7" style="background-color: <?=$value_data_tools->color?>">
           <!--begin::Card body-->
           <div class="card-body d-flex flex-column flex-center text-center">
             <!--begin::Illustrations-->

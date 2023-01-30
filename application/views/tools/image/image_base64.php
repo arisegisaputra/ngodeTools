@@ -1,4 +1,4 @@
-    <style>
+<style>
     
     .dz-message{
       text-align: center;
@@ -139,7 +139,3 @@
 
       
     </div>
-
-    
-    
-  
